@@ -35,6 +35,8 @@ function App() {
           <Allotment>
             <Allotment.Pane minSize={200}>
               <div>Pane 1,test over</div>
+              <div>Pane 1,test over</div>
+              <div>Pane 1,test over</div>
             </Allotment.Pane>
             <Allotment.Pane minSize={200}>
               <div>Pane 1</div>
