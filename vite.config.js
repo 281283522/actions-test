@@ -4,8 +4,8 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [ react() ],
-  build: {
-    assetsDir: 'hello-world'
-  }
-  // publicDir: 'hello-world'
+  // build: {
+  //   publicPath: '/hello-world/'
+  //   // assetsDir: 'hello-world/assets'
+  // }
 });
