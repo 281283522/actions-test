@@ -1,0 +1,10 @@
+.root {
+  align-items: center;
+  display: grid;
+  height: 32px;
+  cursor: pointer;
+}
+
+.root:hover {
+  background-color: rgb(40 40 45);
+}

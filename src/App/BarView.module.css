@@ -1,0 +1,32 @@
+.item {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 7px 7px 10px 8px;
+    font-size: 12px;
+}
+
+.item .close {
+    visibility: hidden;
+}
+
+.item:hover {
+    background-color: #525a69;
+}
+
+.item:hover .close {
+    visibility: inherit;
+}
+
+.active {
+    background-color: #4d5769d6;
+}
+
+.barBox {
+    display: flex;
+    gap: 2px;
+    width: 100%;
+    overflow: auto;
+    height: 40px;
+}

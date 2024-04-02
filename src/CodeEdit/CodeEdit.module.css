@@ -1,0 +1,23 @@
+.item {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 7px 7px 10px 8px;
+}
+
+.item .close {
+    visibility: hidden;
+}
+
+.item:hover {
+    background-color: #e8f0fed6;
+}
+
+.item:hover .close {
+    visibility: inherit;
+}
+
+.active {
+    background-color: #e8f0fe;
+}
