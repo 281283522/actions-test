@@ -5,6 +5,11 @@ on:
     branches:
       - master 
 jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: job1
+        run: echo "job1"
   # 任务ID
   build-and-deploy:
     # 运行环境
