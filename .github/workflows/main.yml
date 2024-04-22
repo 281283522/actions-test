@@ -18,17 +18,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Setup Node.js
+      - name: 安装nodejs18.17.0
         uses: actions/setup-node@v2
         with:
           node-version: '18.17.0'
 
-      - name: Install and Build   # 安装依赖、打包，如果提前已打包好无需这一步
+      - name: 安装依赖&构建
         run: |
           npm install
           npm run build
 
-      - name: Deploy   # 部署
+      - name: 部署
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           branch: vite-build-src # 部署后提交到那个分支
