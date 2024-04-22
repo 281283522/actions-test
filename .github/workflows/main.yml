@@ -18,10 +18,9 @@ jobs:
       - name: 检出代码仓库中的代码，并将代码复制到工作流程的执行环境中
         uses: actions/checkout@v2
 
-      - name: 安装nodejs18.17.0
+      - name: 安装Actions最新版nodejs
         uses: actions/setup-node@v2
-        with:
-          node-version: '18.17.0'
+        
 
       - name: 安装依赖&构建
         run: |
