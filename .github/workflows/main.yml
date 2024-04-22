@@ -1,9 +1,9 @@
 name: CI Github Pages
 on:
-  #监听push操作
+  #监听push操作 ，这里只配置了main分支，所以只有推送main分支才会触发以下任务
   push:
     branches:
-      - master # 这里只配置了main分支，所以只有推送main分支才会触发以下任务
+      - master 
 jobs:
   # 任务ID
   build-and-deploy:
@@ -12,10 +12,10 @@ jobs:
     # 步骤
     steps:
       
-      - name: 将代码拉取到虚拟机  ️#官方action，将代码拉取到虚拟机
+      - name: 将代码拉取到虚拟机
         uses: actions/checkout@v3
 
-      - name: 检出仓库中代码到工作流 #检出代码仓库中的代码，并将代码复制到工作流程的执行环境中
+      - name: 检出代码仓库中的代码，并将代码复制到工作流程的执行环境中
         uses: actions/checkout@v2
 
       - name: 安装nodejs18.17.0
@@ -25,8 +25,8 @@ jobs:
 
       - name: 安装依赖&构建
         run: |
-          npm install #安装依赖
-          npm run build #构建项目
+          npm install
+          npm run build
 
       - name: 部署
         uses: JamesIves/github-pages-deploy-action@v4.3.3
