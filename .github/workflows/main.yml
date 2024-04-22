@@ -12,7 +12,7 @@ jobs:
     # 步骤
     steps:
       
-      - name: 将代码拉取到虚拟机  ️# 官方action，将代码拉取到虚拟机
+      - name: 将代码拉取到虚拟机  ️#官方action，将代码拉取到虚拟机
         uses: actions/checkout@v3
 
       - name: 检出仓库中代码到工作流 #检出代码仓库中的代码，并将代码复制到工作流程的执行环境中
@@ -31,5 +31,5 @@ jobs:
       - name: 部署
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
-          branch: vite-build-src # 部署后提交到那个分支
-          folder: dist # 这里填打包好的目录名称
+          branch: vite-build-src #部署后提交到那个分支
+          folder: dist #这里填打包好的目录名称
