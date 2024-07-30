@@ -1,0 +1,52 @@
+.engine-tool-bar {
+  width: 50px;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  background: var(--color-primary);
+  flex-direction: column;
+  justify-content: space-between;
+
+  //border-right: 1px solid #dddddd;
+
+  .engine-tool-items {
+    gap: 8px;
+    display: flex;
+    padding-block: 12px;
+    padding-inline: 5px;
+    flex-direction: column;
+  }
+
+  .engine-tool-item {
+    width: 40px;
+    height: 40px;
+    color: white;
+    display: flex;
+    cursor: pointer;
+    transition: background-color .12s linear;
+    align-items: center;
+    border-radius: 6px;
+    justify-content: center;
+
+    &:hover {
+      background: rgba(255, 255, 255, .2);
+    }
+  }
+
+  .engine-tool-login-out {
+    color: white;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    transition: background-color .12s linear;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background: rgba(255, 255, 255, .2);
+    }
+
+    border-top: 1px solid rgba(255, 255, 255, .3);
+  }
+}

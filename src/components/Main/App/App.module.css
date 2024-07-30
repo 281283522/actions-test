@@ -1,0 +1,38 @@
+.app {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.treeRoot {
+    height: 100%;
+}
+
+.draggingSource {
+    opacity: .3;
+}
+
+.dropTarget {
+    background-color: #575757;
+}
+
+.engin {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    background: linear-gradient(#ffffff, #f5f5f5 28%);
+    flex-direction: row;
+}
+
+.enginBody {
+    width: calc(100vw - 50px);
+    display: flex;
+    flex-direction: column;
+}
+
+.enginContent {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}

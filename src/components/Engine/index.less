@@ -1,0 +1,33 @@
+.engin {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  background: linear-gradient(#ffffff, #f5f5f5 28%);
+  flex-direction: row;
+
+  &-body {
+    width: calc(~'100vw - 50px');
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-content {
+    display: flex;
+    height: calc(~'100vh - 50px');
+    flex-direction: row;
+    position: relative;
+  }
+
+  &-edition {
+    width: calc(~'100% - 260px');
+  }
+}
+
+//.xterm {
+//  height: 100% !important;
+//}
+
+.xterm, .xterm-screen, .xterm-rows {
+  height: 100% !important;
+}
